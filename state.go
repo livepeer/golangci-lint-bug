@@ -7,10 +7,6 @@ import (
 	v0 "github.com/livepeer/catalyst-api/schema/v0"
 )
 
-type SignedEvent struct {
-	Action any
-}
-
 func HandleEvent(e *events.SignedEvent) error {
 	switch act := e.Action.(type) {
 
